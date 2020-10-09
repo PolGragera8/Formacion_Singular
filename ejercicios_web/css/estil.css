@@ -1,0 +1,227 @@
+/* CSS EJERCICIO 1 */
+#bodyejercicio1 {
+    background-color: beige;
+}
+
+#titulorojo {
+    color: red;
+}
+
+/* CSS EJERCICIO 3 */
+.titulo {
+    color: skyblue;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.texto {
+    color: darkblue;
+    font-size: 15px;
+}
+
+.destacado {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* CSS EJERCICIO 4 */
+.boxseccion {
+    width: 100%;
+    height: 450px;
+    background-color: darkgray;
+}
+
+.boxproducto {
+    width: 30%;
+    height: 95%;
+    margin: 12px;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.boximagen {
+    width: 98%;
+    margin-left: 2px;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.precio {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.tituloproducto {
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.descripcion {
+    margin-left: 20px;
+    color: grey;
+}
+
+.anadir {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.opcionesanadir {
+    float: left;
+    margin-left: 30px;
+}
+
+/* CSS EJERCICIO 4a */
+#cabeza {
+    background-color: blue;
+    width: 100%;
+    height: 40px;
+}
+
+#pie {
+    background-color: red;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+}
+
+.textoblanco {
+    color: white;
+    text-align: center;
+}
+
+/* CSS EJERCICIO 4b */
+.boxcentrada {
+    background-color: crimson;
+    position: relative;
+    top: 300px;
+    left: 650px;
+    width: 500px;
+    height: 500px;
+}
+
+.textocentrado {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 200px;
+}
+
+#arribaizquierda {
+    background-color: beige;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    border: 5px solid crimson;
+    position: absolute;
+    top: 300px;
+    left: 580px;
+}
+
+#arribaderecha {
+    background-color: beige;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    border: 5px solid crimson;
+    position: absolute;
+    top: 300px;
+    left: 1080px;
+}
+
+#abajoizquierda {
+    background-color: beige;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    border: 5px solid crimson;
+    position: absolute;
+    top: 800px;
+    left: 580px;
+}
+
+#abajoderecha {
+    background-color: beige;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    border: 5px solid crimson;
+    position: absolute;
+    top: 800px;
+    left: 1080px;
+}
+
+/* CSS EJERCICIO 4c */
+#textoabsoluto {
+    position: absolute;
+    width: 250px;
+    top: 100px;
+    left: 400px;
+}
+
+#boxizquierda {
+    background-color: white;
+    width: 200px;
+    height: 500px;
+    margin-left: 300px;
+    float: left;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#boxderecha {
+    background-color: aqua;
+    width: 200px;
+    height: 500px;
+    float: left;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* CSS EJERCICIO 5 */
+#boxpulgares {
+    width: 500px;
+    height: 500px;
+}
+
+.handleft {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: red;
+    float: left;
+}
+
+.handright {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: green;
+    float: left;
+}
+
+.handleftdown {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: blue;
+    float: left;
+}
+
+.handrightdown {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: black;
+    float: left;
+}
+
+.hand {
+    font-size: 150px;
+    color: white;
+    margin: 25px;
+}
+/* CSS EJERCICIO 6 */
