@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 7</title>
+    <!-- insertar aquí el enlace a estilos.css -->
+    <link href="css/estil.css" rel="stylesheet" />
+    <!-- FontAwesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body id="factura">
+    <a href="index.html">Volver</a>
+    <!-- insertar aquí el enlace href al índice -->
+    <div class="boximagenizquierda">
+        <img alt="imagenlogo" src="img/fotoperfil.PNG" width="45%" height="65%;" />
+        <p class="piedefoto">Pol Gragera Fontal</p>
+        <p class="piedefoto">CIF/NIF : 48223392J</p>
+        <p class="piedefoto">Calle el Paraiso n·8</p>
+        <p class="piedefoto">CP: 14700 Córdoba</p>
+        <p class="piedefoto">Córdoba España</p>
+    </div>
+    <div class="boxinformacionderecha">
+        <div class="datosfactura">
+            <p class="borderturquesa">Número de factura: 2017-0001</p>
+            <p class="piedefoto">Fecha de factura: 22/06/2017</p>
+        </div>
+        <div class="bordersazules">
+            <h2>Cliente:</h2>
+            <p class="piedefoto">VicVal SI</p>
+            <p class="piedefoto">CIF/NIF: B30142516</p>
+            <p class="piedefoto">C/Mala n·1</p>
+            <p class="piedefoto">18190 Granada</p>
+            <p class="piedefoto">Granada, España</p>
+        </div>
+    </div>
+    <table style="width: 100%; padding: 10px;">
+        <tr style="background-color: #A9DEC2">
+            <th>Concepto</th>
+            <th colspan="2">Cantidad de base impobible</th>
+            <th>I.V.A</th>
+        </tr>
+        <tr class="borderabajoazul">
+            <td class="borderabajoazul">Servicio de soporte técnico y reparación de sistemas informáticos</td>
+            <td class="borderabajoazul">2 x 40,00 €</td>
+            <td class="borderabajoazul">80,00 €</td>
+            <td class="borderabajoazul">21% (16,80€)</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="alignderecha">Total Base Imponible:</td>
+            <td>80,00€</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="alignderecha">I.V.A. 21%:</td>
+            <td>16,80€</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="alignderecha">Retención 15%:</td>
+            <td>12,00€</td>
+        </tr>
+        <tr class="borderabajoazul">
+            <td colspan="3" class="alignderecha negrita borderabajoazul" >TOTAL:</td>
+            <td class="negrita borderabajoazul">84,80€</td>
+        </tr>
+        <tr>
+            <td>Fecha de vencimiento: 22/06/2017</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -224,45 +224,152 @@
     color: white;
     margin: 25px;
 }
+
+/* CSS EJERCICIO 7*/
+#factura {
+    width: 1000px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.boximagenizquierda {
+    margin-top: 50px;
+    float: left;
+    width: 40%;
+    height: 300px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.boxinformacionderecha {
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.piedefoto {
+    line-height: 3px;
+}
+
+.datosfactura {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.borderturquesa {
+    border-bottom: 3px solid #A9DEC2;
+    display: inline;
+    padding-bottom: 3px;
+}
+
+.bordersazules {
+    border-left: 5px solid #A9DEC2;
+    border-right: 5px solid #A9DEC2;
+    padding-left: 15px;
+    margin-right: 25px;
+}
+
+.alignderecha {
+    text-align: right;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.borderabajoazul {
+    border-bottom: 2px solid #A9DEC2;
+}
+
 /* CSS EJERCICIO 8 BUSCA MINAS */
-#boxjuego{
+#boxjuego {
     width: 70%;
     padding: 20px;
     height: 600px;
     border: 3px solid orange;
 }
-.boxfilas{
+
+.boxfilas {
     width: 95%;
     margin: 10px;
     height: 180px;
 }
-.boxmina{
+
+.boxmina {
     background-color: darkgray;
     width: 16%;
     height: 90%;
     float: left;
     margin: 4px;
 }
-.mina:hover{
+
+.mina:hover {
     background-color: red;
 }
+
 /* CSS EJERCICIO 9 */
-.primeramayuscula{
+.primeramayuscula {
     color: red;
 }
-.primeramayuscula::first-letter{
+
+.primeramayuscula::first-letter {
     font-size: 3em;
 }
+
 /* CSS EJERCICIO 11 */
-#indicetop{
+#indicetop {
     border: 1px solid black;
     width: 100%;
     height: 500px;
     margin-bottom: 500px;
 }
-#sotano{
+
+#sotano {
     margin-top: 500px;
     width: 100%;
     height: 300px;
     border: 1px solid red;
+}
+
+/* CSS EJERCICIO 12 */
+#formulario {
+    width: 1200px;
+    height: 410px;
+    border: 1px solid black;
+}
+
+.boxinputs {
+    border: 1px solid red;
+    width: 90%;
+    height: 300px;
+    margin: 4%;
+
+}
+
+.boxparalelo {
+    float: left;
+    width: 49%;
+    height: 50px;
+    border: 1px solid blue;
+}
+.boxparalelodos {
+    float: left;
+    width: 49%;
+    height: 150px;
+    border: 1px solid blue;
+}
+
+.nombreazul{
+    margin-left: 10px;
+    color: blue;
+    font-weight: bold;
+}
+.inputlargo{
+    width: 1000px;
+}
+.inputcorto{
+    width: 430px;
 }
