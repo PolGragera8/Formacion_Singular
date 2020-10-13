@@ -41,16 +41,34 @@
                     <label class="nombreazul">C. Postal</label>
                     <input type="text" placeholder="C. Postal" name="cpostal" class="inputcorto" />
                 </div>
-                
+
                 <div class="boxparalelodos">
-                    <input type="radio" name="rang"> Menos de 25<br>
+                    <input type="radio" name="25"> Menos de 25<br>
+                    <input type="radio" name="edad"> 26 a 40<br>
+                    <input type="radio" name="edad" selected> 41 a 65<br>
+                    <input type="radio" name="edad"> Más de 66<br>
                 </div>
                 <div class="boxparalelodos">
-                    
+                    <p class="nombreazul">Teléfono móbil</p>
+                    <select name="telefono" class="marginpeque">
+                        <option value="1">No tiene</option>
+                        <option value="2">Android</option>
+                        <option value="3">Iphone</option>
+                        <option value="4">Otros</option>
+                    </select>
+                    <p class="nombreazul">Vehículo</p>
+                    <select name="vehiculo" class="marginpeque">
+                        <option value="1">No tiene</option>
+                        <option value="2">Bici</option>
+                        <option value="3">Moto</option>
+                        <option value="4">Coche</option>
+                        <option value="5">Varios</option>
+                        <option value="6">Otros</option>
+                    </select>
                 </div>
-                
-                <button type="submit">ENVIAR</button>
-                
+
+                <button type="submit" class="botongrande">ENVIAR</button>
+
             </div>
 
         </form>

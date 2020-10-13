@@ -342,7 +342,6 @@
 }
 
 .boxinputs {
-    border: 1px solid red;
     width: 90%;
     height: 300px;
     margin: 4%;
@@ -353,23 +352,33 @@
     float: left;
     width: 49%;
     height: 50px;
-    border: 1px solid blue;
 }
+
 .boxparalelodos {
     float: left;
     width: 49%;
-    height: 150px;
-    border: 1px solid blue;
+    height: 130px;
 }
 
-.nombreazul{
+.nombreazul {
     margin-left: 10px;
     color: blue;
     font-weight: bold;
 }
-.inputlargo{
+
+.inputlargo {
     width: 1000px;
 }
-.inputcorto{
+
+.inputcorto {
     width: 430px;
+}
+
+.marginpeque {
+    margin-left: 15px;
+}
+
+.botongrande {
+    width: 100px;
+    height: 30px;
 }
