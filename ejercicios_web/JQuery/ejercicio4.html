@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 4 jQuery</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <button id="restar">-</button> <br>
+    <input type="text" name="texto" id="text" value="0" disabled /> <br>
+    <button id="sumar">+</button> <br>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        
+      // Resta
+        $("#restar").click(function(){
+            let numero = $("#text").val();
+            numero--;
+            $("#text").val(numero);
+        });
+    // Suma
+        $("#sumar").click(function(){
+            let numero = $("#text").val();
+            numero++;
+            $("#text").val(numero);
+        });
+    
+
+    </script>
+</body>
+
+</html>

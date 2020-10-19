@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 2 jQuery</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <input type="text" name="texto" id="texto" /> <br>
+    <button id="copiar">Copiar texto</button> <br>
+    <input type="text" name="textocopia" id="texto_copia" /> 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        
+      $("#copiar").click(function(){
+          let texto = $("#texto").val();
+          $("#texto_copia").val(texto);
+      })
+    
+
+    </script>
+</body>
+
+</html>

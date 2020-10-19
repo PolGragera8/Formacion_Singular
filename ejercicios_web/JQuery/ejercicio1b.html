@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 1b jQuery</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+        .circulo{
+            border-radius: 40px;
+            margin: 20px;
+            width: 50px;
+            height: 50px;
+            float: left;
+            background-color: gray;
+        }
+        .bg-rojo{
+            background-color: red;
+        }
+        .bg-gris{
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="circulo"></div>
+    <div class="circulo"></div>
+    <div class="circulo"></div>
+    <div class="circulo"></div>
+    <div class="circulo"></div>
+    
+    <button id="ponerRojo">Poner en rojo</button><br />
+    <button id="quitarRojo">Quitar rojo</button>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        
+       $("#ponerRojo").click(function(){
+           $(".circulo").toggleClass("bg-rojo");
+       });
+        
+        $("#quitarRojo").click(function(){
+           $(".circulo").toggleClass("bg-gris");
+       })
+        
+
+    </script>
+</body>
+
+</html>

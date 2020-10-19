@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 3 jQuery</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <input type="text" name="texto" id="texto" /> <br>
+    <button id="copiar">Copiar texto</button> <br>
+    <table>
+            <thead>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p class="texto_copia"></p></td>
+                    <td><p class="texto_copia"></p></td>
+                    <td><p class="texto_copia"></p></td>
+                </tr>
+                <tr>
+                    <td><p class="texto_copia"></p></td>
+                    <td><p class="texto_copia"></p></td>
+                    <td><p class="texto_copia"></p></td>
+                </tr>
+                <tr>
+                    <td><p class="texto_copia"></p></td>
+                    <td><p class="texto_copia"></p></td>
+                    <td><p class="texto_copia"></p></td>
+                </tr>
+            </tbody>
+        </table>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        
+      $("#copiar").click(function(){
+          let item = $("#texto").val();
+          $(".texto_copia").text(item);
+      })
+    
+
+    </script>
+</body>
+
+</html>
