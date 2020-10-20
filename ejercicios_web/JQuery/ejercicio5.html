@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>Ejercicio 5 jQuery</title>
+    <title>Ejercicio 5 y 6b jQuery</title>
     <style>
         body {
             padding: 50px;
@@ -11,7 +11,7 @@
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css" />
+
 </head>
 
 <body>
@@ -19,13 +19,13 @@
     <div class="container">
         <nav aria-label="Page navigation example">
             <ul class="pagination">
-                <li><a id="atras" class="page-link" href="#">«</a></li>
-                <li><a class="page-link nums" href="p1">1</a></li>
-                <li><a class="page-link nums" href="p2">2</a></li>
-                <li><a class="page-link nums" href="p3">3</a></li>
-                <li><a class="page-link nums" href="p4">4</a></li>
-                <li><a class="page-link nums" href="p5">5</a></li>
-                <li><a id="adelante" class="page-link" href="##">»</a></li>
+                <li><a id="restar" class="page-link" href="#">«</a></li>
+                <li><a class="page-link text" href="#">1</a></li>
+                <li><a class="page-link text" href="#">2</a></li>
+                <li><a class="page-link text" href="#">3</a></li>
+                <li><a class="page-link text" href="#">4</a></li>
+                <li><a class="page-link text" href="#">5</a></li>
+                <li><a id="sumar" class="page-link" href="##">»</a></li>
             </ul>
         </nav>
     </div>
@@ -35,12 +35,73 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
+        // Declarar array
+        let arrValores = new Array(5);
 
+        GetValores();
 
+        // Restar
+        $("#restar").click(function() {
+            if (arrValores[0] == 1) {
+                alert("No puedes bajar mas");
+            } else {
+                for (var i = 0; i < arrValores.length; i++) {
+                    arrValores[i]--;
+                }
+                SetValores(arrValores);
+                SetHref(arrValores);
+            }
+        });
 
+        // Sumar
+        $("#sumar").click(function() {
+            if (arrValores[4] == 20) {
+                alert("No puedes subir mas");
+            } else {
+                for (var i = 0; i < arrValores.length; i++) {
+                    arrValores[i]++;
+                }
+                SetValores(arrValores);
+                SetHref(arrValores);
+            }
+        });
+
+        // Get
+        function GetValores() {
+
+            let j = 0;
+            $(".text").each(function() {
+                arrValores[j] = $(this).text();
+                j++;
+            });
+
+        }
+
+        // Set
+        function SetValores(arr) {
+
+            let j = 0;
+            $(".text").each(function() {
+                $(this).text(arr[j]);
+                j++;
+            });
+        }
+        // Set href
+        function SetHref(arr) {
+            let j = 0;
+            $(".text").each(function() {
+                $(this).attr("href", "p" + arr[j]);
+                j++;
+            });
+        }
+
+        // Alert clic numero
+        $(".text").click(function() {
+            alert("Has echo click en: " + $(this).text());
+        });
 
     </script>
-    
+
 </body>
 
 </html>
