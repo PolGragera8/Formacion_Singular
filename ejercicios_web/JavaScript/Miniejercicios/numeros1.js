@@ -25,6 +25,7 @@ function datos(x) {
         alert("Divisble entre 7");
         divisible7 = 1;
     }
+    console.log(divisible5);
 
     if (par == 0) {
         alert("Es impar")
@@ -32,15 +33,17 @@ function datos(x) {
         alert("No es divisible entre 3");
     } else if (divisible5 == 0) {
         alert("No es divisible entre 5");
+        console.log("Ha llegado");
     } else if (divisible7 == 0) {
         alert("No es divisible entre 7");
     }
 }
 
-function sumaValores(arr) {
+function sumaValores() {
+    let arr = [1,3,9,2,3]
     let suma = 0;
-    for (var i = 0; arr.length >= i; i++) {
-        suma = arr.length[i] + suma;
+    for (var i = 0; arr.length > i; i++) {
+        suma = arr[i] + suma;
     }
     alert("La suma es :" + suma);
 }
